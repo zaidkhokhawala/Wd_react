@@ -1,0 +1,110 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="one">
+    <button onclick="main()"> date</button><br><br>
+    <input type="text" id="two">
+    <button onclick="maintime()"> time</button><br><br>
+    <input type="text" id="demo">
+    <button onclick="maingood()"> button </button><br><br>
+
+    <script>
+
+function main() {
+    let a  = new Date().toLocaleDateString()
+document.getElementById("one").value = a
+
+}
+function maintime() {
+    let b = new Date().toLocaleTimeString()
+    document.getElementById("two").value = b
+    
+}
+
+function maingood() {
+    let c = new Date().getHours();
+
+if (c > 6) {
+   document.getElementById("demo").value = "good night";
+}
+
+else if (c > 12) {
+   document.getElementById("demo").value = "good morning";
+}
+
+else if (c > 16) {
+   document.getElementById("demo").value = "good afternoon";
+}
+else if (c > 20) {
+   document.getElementById("demo").value = "good evening";
+}
+
+else {
+   document.getElementById("demo").innerHTML = "good night";
+}
+
+}
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="one">
+    <button onclick="main()"> date</button><br><br>
+    <input type="text" id="two">
+    <button onclick="maintime()"> time</button><br><br>
+    <input type="text" id="demo">
+    <button onclick="maingood()"> button </button><br><br>
+
+    <script>
+
+function main() {
+    let a  = new Date().toLocaleDateString()
+document.getElementById("one").value = a
+
+}
+function maintime() {
+    let b = new Date().toLocaleTimeString()
+    document.getElementById("two").value = b
+    
+}
+
+function maingood() {
+    let c = new Date().getHours();
+
+if (c > 6) {
+   document.getElementById("demo").value = "good night";
+}
+
+else if (c > 12) {
+   document.getElementById("demo").value = "good morning";
+}
+
+else if (c > 16) {
+   document.getElementById("demo").value = "good afternoon";
+}
+else if (c > 20) {
+   document.getElementById("demo").value = "good evening";
+}
+
+else {
+   document.getElementById("demo").innerHTML = "good night";
+}
+
+}
+    </script>
+</body>
+>>>>>>> c41b63e206e80f023c7d620e23817322de250b06
+</html>

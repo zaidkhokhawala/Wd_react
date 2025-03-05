@@ -1,0 +1,70 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="data"></div>
+    <script>
+
+
+        fetch('https://jsonplaceholder.typicode.com/todos')
+        // json to object
+            .then((res) => (res.json()))
+            .then((res) => {
+                console.log(res)
+                res.map((data) => {
+                    console.log(data)
+                    return(
+                        document.getElementById('data').innerHTML += `user id : ${data.id}  title : ${data.title} ` + "<br>"
+                    )
+                })
+            })
+        // .then((todolist) => {
+        //     for (var data of todolist) {
+        //          document.getElementById("data").innerHTML += JSON.stringify(" user name : " + data.id + " " + " Title : " + data.title) + "<br>" }
+        // })
+    </script>
+</body>
+
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="data"></div>
+    <script>
+
+
+        fetch('https://jsonplaceholder.typicode.com/todos')
+        // json to object
+            .then((res) => (res.json()))
+            .then((res) => {
+                console.log(res)
+                res.map((data) => {
+                    console.log(data)
+                    return(
+                        document.getElementById('data').innerHTML += `user id : ${data.id}  title : ${data.title} ` + "<br>"
+                    )
+                })
+            })
+        // .then((todolist) => {
+        //     for (var data of todolist) {
+        //          document.getElementById("data").innerHTML += JSON.stringify(" user name : " + data.id + " " + " Title : " + data.title) + "<br>" }
+        // })
+    </script>
+</body>
+
+>>>>>>> c41b63e206e80f023c7d620e23817322de250b06
+</html>

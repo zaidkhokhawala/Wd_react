@@ -1,0 +1,78 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="demo"></h1>
+   <h1 id="day"></h1>
+   <h1 id="a"></h1>
+   <h1 id="b"></h1>
+   <h1 id="r"></h1>
+   <h1 id="obj"></h1>
+<script>
+
+let b = new Date();
+let a = b.getHours() + ":" + b.getMinutes()+ ":" + b.getSeconds();
+document.getElementById("demo").innerHTML = a;
+
+
+let c = ["sun" , "mon" , "tue" , "wed" , "thu" , "fri" , "sat"  ];
+let d = new Date().getDay();
+c[3] = "wed"
+document.getElementById("day").innerHTML = c[d]
+
+let e  = new Date().toLocaleDateString()
+document.getElementById("b").innerHTML = e
+
+let f = new Date().toLocaleTimeString();
+document.getElementById("r").innerHTML = f
+
+
+
+
+</script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="demo"></h1>
+   <h1 id="day"></h1>
+   <h1 id="a"></h1>
+   <h1 id="b"></h1>
+   <h1 id="r"></h1>
+   <h1 id="obj"></h1>
+<script>
+
+let b = new Date();
+let a = b.getHours() + ":" + b.getMinutes()+ ":" + b.getSeconds();
+document.getElementById("demo").innerHTML = a;
+
+
+let c = ["sun" , "mon" , "tue" , "wed" , "thu" , "fri" , "sat"  ];
+let d = new Date().getDay();
+c[3] = "wed"
+document.getElementById("day").innerHTML = c[d]
+
+let e  = new Date().toLocaleDateString()
+document.getElementById("b").innerHTML = e
+
+let f = new Date().toLocaleTimeString();
+document.getElementById("r").innerHTML = f
+
+
+
+
+</script>
+</body>
+>>>>>>> c41b63e206e80f023c7d620e23817322de250b06
+</html>

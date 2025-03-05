@@ -1,0 +1,56 @@
+<<<<<<< HEAD
+body {
+    background-color: #f4f4f9;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .form-check-input:focus {
+    box-shadow: none; 
+  }
+  
+  .form-check-label {
+    margin-left: 10px;
+  }
+=======
+body {
+    background-color: #f4f4f9;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .form-check-input:focus {
+    box-shadow: none; 
+  }
+  
+  .form-check-label {
+    margin-left: 10px;
+  }
+>>>>>>> c41b63e206e80f023c7d620e23817322de250b06
+  
