@@ -1,0 +1,65 @@
+<?php require_once("header.php") ?>
+
+<!-- Main Banner Split Area Start -->
+<div class="container-fluid" style="height: 100vh; padding: 0; margin: 0;">
+  <div class="row h-100 m-0">
+    
+    <!-- Left 30% (Previously text area, now empty or blank) -->
+    <div class="col-md-4 d-none d-md-block" style="background-color: #000000;"></div>
+    
+    <!-- Right 70% with image + form overlay -->
+    <div class="col-md-8 position-relative p-0">
+      
+      <!-- Background Image -->
+      <img src="../../assets/images/slide-01.jpg" alt="Banner Image" 
+           style="width: 100%; height: 100%; object-fit: cover;">
+
+      <!-- Form Overlay -->
+      <div class="position-absolute top-50 start-50 translate-middle-y px-5" style="right: 10%; z-index: 2;">
+        <div class="bg-light p-5 rounded shadow" style="max-width: 500px; opacity: 0.95;">
+          <h4 class="mb-4 text-center">Table Reservation</h4>
+          <form action="" method="post">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input name="name" type="text" class="form-control" placeholder="Your Name*" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input name="email" type="email" class="form-control" placeholder="Your Email*" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input name="phone" type="text" class="form-control" placeholder="Phone Number*" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <select name="number-guests" class="form-control" required>
+                  <option value="">Number Of Guests</option>
+                  <?php for ($i = 1; $i <= 12; $i++) echo "<option value='{$i}'>{$i}</option>"; ?>
+                </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input name="date" type="text" class="form-control" placeholder="dd/mm/yyyy" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <select name="time" class="form-control" required>
+                  <option value="">Time</option>
+                  <option value="Breakfast">Breakfast</option>
+                  <option value="Lunch">Lunch</option>
+                  <option value="Dinner">Dinner</option>
+                </select>
+              </div>
+              <div class="col-12 mb-3">
+                <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary px-4">Make A Reservation</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Main Banner Split Area End -->
+
+<?php require_once("footer.php") ?>
